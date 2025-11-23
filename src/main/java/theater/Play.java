@@ -1,12 +1,34 @@
 package theater;
 
+/**
+ * Represents a play performed at the theater.
+ * * This class holds basic information about a play, specifically its name and type.
+ * * Nathan Mills <-- Likely the tag that was missing.
+ * @version 1.0
+ */
 public class Play {
 
-    public String name;
-    public String type;
+    private String name;
+    private String type;
 
     public Play(String name, String type) {
         this.name = name;
+        this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
         this.type = type;
     }
 }
